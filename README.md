@@ -34,14 +34,14 @@ Start the server
 
 ```
 
-##passwords
- ambulance side -- 
- username - WB37B0249
- password - zmH01fh2N/
+##passwords <br/>
+ ambulance side -- <br/>
+ username - WB37B0249 <br/>
+ password - zmH01fh2N/ <br/>
 
- police side -- 
- username - admin
- password - password123
+ police side -- <br/>
+ username - admin <br/>
+ password - password123 <br/>
 
 ## Screenshots
 
@@ -49,4 +49,4 @@ Start the server
 ![Home Page](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/home.png)
 ![Login Page](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceLogin.png)
 ![Ambulance side](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceSide.png)
-![Police side](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/policeSide.png)
+![Police side](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/PoliceSide.png)
