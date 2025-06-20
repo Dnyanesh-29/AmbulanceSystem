@@ -115,7 +115,6 @@ Each signal (Red, Yellow, Green) should have a 220Ω–330Ω resistor in series.
 
 
 Tranmitter side connection <br/>
-To document the hardware setup for this Arduino-based RF **transmitter circuit**, you can add the following Markdown section to your `README.md` file:
 
 ---
 
