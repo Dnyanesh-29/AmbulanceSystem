@@ -45,8 +45,14 @@ Start the server
 
 ## Screenshots
 
+<h3>Home Page</h3>
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/home.png?raw=true" width="600"/>
 
-![Home Page](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/home.png | width = 200)
-![Login Page](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceLogin.png)
-![Ambulance side](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceSide.png)
-![Police side](https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/PoliceSide.png)
+<h3>Login Page</h3>
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceLogin.png?raw=true" width="600"/>
+
+<h3>Ambulance Side</h3>
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceSide.png?raw=true" width="600"/>
+
+<h3>Police Side</h3>
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/PoliceSide.png?raw=true" width="600"/>
