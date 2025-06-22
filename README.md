@@ -129,4 +129,3 @@ node server.js
 
 ---
 
-Let me know if you'd like badges, a license section, or deployment instructions for hosting this on a cloud platform!
