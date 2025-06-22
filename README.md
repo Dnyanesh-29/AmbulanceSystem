@@ -1,95 +1,97 @@
 
-Smart Traffic Management System (STMS)
-
-his project is designed to help emergency vehicles—like ambulances, fire engines, and police cars—move through traffic faster and more safely in urban areas. It combines a smart web app that gives real-time navigation and live location sharing with traffic officers, and a transmitter-receiver system that automatically turns traffic lights green as the emergency vehicle approaches.
-It's built for emergency responders who need faster access during crises, and for traffic authorities who coordinate clear passage. The system ultimately aims to save lives by reducing delays and creating safer, more responsive cities.
-
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Dnyanesh-29/AmbulanceSystem
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-replace your google maps api key
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  node server.js
-
-```
-
-##passwords <br/>
- ambulance side -- <br/>
- username - WB37B0249 <br/>
- password - zmH01fh2N/ <br/>
-
- police side -- <br/>
- username - admin <br/>
- password - password123 <br/>
-
-## Screenshots
-
-<h3>Home Page</h3>
-<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/home.png?raw=true" width="600"/>
-
-<h3>Login Page</h3>
-<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceLogin.png?raw=true" width="600"/>
-
-<h3>Ambulance Side</h3>
-<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceSide.png?raw=true" width="600"/>
-
-<h3>Police Side</h3>
-<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/PoliceSide.png?raw=true" width="600"/>
-
-
-
-## Hardware Side
-Upload code of both transmitter side and reciver side to both respective arduinos according to connections given <br/>
-
-## 📚 Required Arduino Libraries
-
-To run this project smoothly, make sure the following libraries are installed in your Arduino IDE:
-
-| Library Name         | Description                                               | Installation Method                          |
-|----------------------|-----------------------------------------------------------|-----------------------------------------------|
-| `RadioHead (RH_ASK)` | Enables RF communication for transmitter and receiver     | Arduino IDE → Tools → Manage Libraries → Search “RadioHead” |
-| `SPI`                | Dependency for `RH_ASK` communication                     | Built-in with Arduino IDE                     |
-| `Wire`               | I2C communication protocol (used by LCD module)           | Built-in with Arduino IDE                     |
-| `LiquidCrystal_I2C`  | Controls 16x2 LCD via I2C interface                       | Arduino IDE → Tools → Manage Libraries → Search “LiquidCrystal_I2C” |
-
-> 🛠️ **Note:** Make sure to restart the Arduino IDE after installing libraries to apply changes.
-
-Reciver side connections <br/>
 
 ---
 
-## 🔌 Hardware Connections
+# 🚨 Smart Traffic Management System (STMS)
 
-### 📡 RF Receiver (RH_ASK)
+A smart and responsive system that enables **emergency vehicles**—like ambulances, police cars, and fire engines—to navigate urban traffic faster and safer by integrating **real-time location sharing**, **automated traffic signal control**, and a **web-based control panel**.
 
-| Pin | Arduino |
-|-----|---------|
-| VCC | 5V      |
-| GND | GND     |
-| Data | A0     |
+> **Built for** emergency responders, traffic authorities, and smart cities looking to reduce response time and enhance road safety.
 
-### 📟 I2C LCD Display
+---
+
+## 🚀 Features
+
+- 🔀 **Automatic Signal Switching** using RF modules
+- 📍 **Live Navigation & Location Tracking** for emergency vehicles
+- 🧭 **Dynamic Dashboard** for traffic police
+- ⚙️ **Web-Based App** for dispatch and real-time communication
+- 🧠 **Microcontroller Integration** using Arduino with RF-based controls
+- 🛠️ Simple to deploy and easy to scale
+
+---
+
+## 📦 Run Locally
+
+```bash
+# Clone the project
+git clone https://github.com/Dnyanesh-29/AmbulanceSystem
+
+# Navigate to the project folder
+cd AmbulanceSystem
+
+# Replace Google Maps API Key in the code
+
+# Install dependencies
+npm install
+
+# Start the server
+node server.js
+```
+
+---
+
+## 🔐 Credentials
+
+| User Type       | Username     | Password     |
+|----------------|--------------|--------------|
+| Ambulance       | WB37B0249    | zmH01fh2N/   |
+| Police Dashboard | admin       | password123  |
+
+---
+
+## 🖼️ Screenshots
+
+### 🚦 Home Page  
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/home.png?raw=true" width="700"/>
+
+### 🔐 Login Page  
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceLogin.png?raw=true" width="700"/>
+
+### 🚑 Ambulance Interface  
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceSide.png?raw=true" width="700"/>
+
+### 👮‍♂️ Police Control Panel  
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/PoliceSide.png?raw=true" width="700"/>
+
+---
+
+## 🔌 Hardware Setup
+
+### 📚 Required Arduino Libraries
+
+| Library Name         | Description                                  |
+|----------------------|----------------------------------------------|
+| `RadioHead (RH_ASK)` | RF communication driver                      |
+| `SPI`                | Required for `RH_ASK`                        |
+| `Wire`               | I2C support for LCD                          |
+| `LiquidCrystal_I2C`  | LCD controller via I2C                       |
+
+> Install via: Arduino IDE → Tools → Manage Libraries
+
+---
+
+## 📡 Receiver Circuit
+
+### 🔗 RF Receiver
+
+| Pin  | Arduino UNO |
+|------|-------------|
+| VCC  | 5V          |
+| GND  | GND         |
+| Data | A0          |
+
+### 🖥️ I2C LCD Display
 
 | Pin | Arduino UNO |
 |-----|-------------|
@@ -98,48 +100,33 @@ Reciver side connections <br/>
 | SDA | A4          |
 | SCL | A5          |
 
-### 🚦 Traffic Signals (LEDs + Resistors)
+### 🚦 Traffic LEDs
 
-Each signal (Red, Yellow, Green) should have a 220Ω–330Ω resistor in series.
-
-| Signal | Red Pin | Yellow Pin | Green Pin |
-|--------|---------|------------|-----------|
-| 1      | D8      | D9         | D10       |
-| 2      | D11     | D12        | D13       |
-| 3      | D2      | D3         | D4        |
-| 4      | D5      | D6         | D7        |
-
-> **Tip:** Connect all component grounds together for reliable operation.
+| Signal | Red | Yellow | Green |
+|--------|-----|--------|-------|
+| 1      | D8  | D9     | D10   |
+| 2      | D11 | D12    | D13   |
+| 3      | D2  | D3     | D4    |
+| 4      | D5  | D6     | D7    |
 
 ---
 
+## 📡 Transmitter Circuit
 
-Tranmitter side connection <br/>
+| Component            | Pin      | Notes                                  |
+|---------------------|----------|----------------------------------------|
+| Red LED (Ambulance) | D6       | Blinks on transmit                     |
+| Green LED           | D7       | Alternates with red                    |
+| Button              | D8       | `INPUT_PULLUP`, active LOW             |
 
----
-
-## 📡 Transmitter Circuit Connections
-
-This transmitter module sends a signal when the button is pressed, simulating an ambulance's presence and triggering traffic control actions on the receiver side.
-
-### 🔧 Pin Configuration
-
-| Component         | Arduino Pin | Notes                           |
-|------------------|-------------|---------------------------------|
-| RF Transmitter   | N/A (built into RH_ASK) | Connected internally via `RH_ASK driver` |
-| Ambulance Red LED   | D6          | Blinks when transmitter is ON   |
-| Ambulance Green LED | D7          | Alternates with red LED         |
-| Button (Toggle)  | D8          | Use `INPUT_PULLUP`, active LOW  |
-
-> **Tip:** Connect the other leg of the button to **GND**, and ensure LEDs have 220Ω–330Ω resistors in series.
+> Ensure all LEDs have a 220–330Ω resistor in series.
 
 ---
 
-## circuit diagram
+## 🔧 Circuit Diagram
 
-<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/image_2025-06-20_103404862.png?raw=true" width="600"/>
+<img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/image_2025-06-20_103404862.png?raw=true" width="700"/>
 
+---
 
-
-
-
+Let me know if you'd like badges, a license section, or deployment instructions for hosting this on a cloud platform!
