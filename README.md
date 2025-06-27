@@ -2,7 +2,7 @@
 
 ---
 
-# 🚨 Smart Traffic Management System (STMS)
+#  Smart Traffic Management System (STMS)
 
 A smart and responsive system that enables **emergency vehicles**—like ambulances, police cars, and fire engines—to navigate urban traffic faster and safer by integrating **real-time location sharing**, **automated traffic signal control**, and a **web-based control panel**.
 
@@ -10,18 +10,18 @@ A smart and responsive system that enables **emergency vehicles**—like ambulan
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔀 **Automatic Signal Switching** using RF modules
-- 📍 **Live Navigation & Location Tracking** for emergency vehicles
-- 🧭 **Dynamic Dashboard** for traffic police
-- ⚙️ **Web-Based App** for dispatch and real-time communication
-- 🧠 **Microcontroller Integration** using Arduino with RF-based controls
-- 🛠️ Simple to deploy and easy to scale
+-  **Automatic Signal Switching** using RF modules
+-  **Live Navigation & Location Tracking** for emergency vehicles
+-  **Dynamic Dashboard** for traffic police
+-  **Web-Based App** for dispatch and real-time communication
+-  **Microcontroller Integration** using Arduino with RF-based controls
+- Simple to deploy and easy to scale
 
 ---
 
-## 📦 Run Locally
+##  Run Locally
 
 ```bash
 # Clone the project
@@ -41,7 +41,7 @@ node server.js
 
 ---
 
-## 🔐 Credentials
+##  Credentials
 
 | User Type       | Username     | Password     |
 |----------------|--------------|--------------|
@@ -50,25 +50,25 @@ node server.js
 
 ---
 
-## 🖼️ Screenshots
+##  Screenshots
 
-### 🚦 Home Page  
+###  Home Page  
 <img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/home.png?raw=true" width="700"/>
 
-### 🔐 Login Page  
+###  Login Page  
 <img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceLogin.png?raw=true" width="700"/>
 
-### 🚑 Ambulance Interface  
+###  Ambulance Interface  
 <img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/AmbulanceSide.png?raw=true" width="700"/>
 
-### 👮‍♂️ Police Control Panel  
+###  Police Control Panel  
 <img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/PoliceSide.png?raw=true" width="700"/>
 
 ---
 
-## 🔌 Hardware Setup
+##  Hardware Setup
 
-### 📚 Required Arduino Libraries
+###  Required Arduino Libraries
 
 | Library Name         | Description                                  |
 |----------------------|----------------------------------------------|
@@ -91,7 +91,7 @@ node server.js
 | GND  | GND         |
 | Data | A0          |
 
-### 🖥️ I2C LCD Display
+###  I2C LCD Display
 
 | Pin | Arduino UNO |
 |-----|-------------|
@@ -100,7 +100,7 @@ node server.js
 | SDA | A4          |
 | SCL | A5          |
 
-### 🚦 Traffic LEDs
+###  Traffic LEDs
 
 | Signal | Red | Yellow | Green |
 |--------|-----|--------|-------|
@@ -111,7 +111,7 @@ node server.js
 
 ---
 
-## 📡 Transmitter Circuit
+##  Transmitter Circuit
 
 | Component            | Pin      | Notes                                  |
 |---------------------|----------|----------------------------------------|
@@ -123,7 +123,7 @@ node server.js
 
 ---
 
-## 🔧 Circuit Diagram
+## Circuit Diagram
 
 <img src="https://github.com/Dnyanesh-29/AmbulanceSystem/blob/main/ss/image_2025-06-20_103404862.png?raw=true" width="700"/>
 
